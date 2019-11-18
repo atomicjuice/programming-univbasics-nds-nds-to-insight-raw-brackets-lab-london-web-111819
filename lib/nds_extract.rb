@@ -20,7 +20,7 @@ def directors_totals(nds)
     #   result[director[:name]] = gross
     # end
     #   result
-
+pp directors_database
 
     directorCount = 0
     grossCount = 0
@@ -37,9 +37,9 @@ def directors_totals(nds)
          while grossCount == directors_database[directorCount][:movies].count
            grossCount = 0
            directorCount += 1
-          #  if directorCount == directors_database.count
-          #    break
-        #  end
+           if directorCount == directors_database.count
+             break
+         end
        end
      end
      result
